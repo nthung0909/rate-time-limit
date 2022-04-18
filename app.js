@@ -24,6 +24,11 @@ app.get('/', apiLimiter, (req,res) => {
    res.send(`I'm CuaMotCang`);
 })
 
+app.get('/test', apiLimiter, (req,res) => {
+   res.send(`<h3>Test api run!!</h3>`);
+})
+
+
 app.listen(port, () => {
     console.log(`App is running in port ${port}`);
 })
